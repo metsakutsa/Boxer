@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_enemy</sprite>
     <sprite>sprites\spr_button</sprite>
+    <sprite>sprites\spr_button_outline</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_demo</background>
@@ -15,10 +16,22 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_game_init.gml</script>
+    <script>scripts\scr_create_buttons.gml</script>
     <script>scripts\draw_text_outline.gml</script>
     <scripts name="States">
       <script>scripts\state_main_menu.gml</script>
       <script>scripts\state_player_turn.gml</script>
+    </scripts>
+    <scripts name="Player skills">
+      <script>scripts\skill_punch.gml</script>
+      <script>scripts\skill_kick.gml</script>
+      <script>scripts\skill_talk.gml</script>
+      <script>scripts\skill_think.gml</script>
+      <script>scripts\skill_defend.gml</script>
+      <script>scripts\skill_flee.gml</script>
+      <script>scripts\skill_powerup.gml</script>
+      <script>scripts\skill_grapple.gml</script>
+      <script>scripts\skill_tackle.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">

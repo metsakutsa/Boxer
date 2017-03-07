@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Initialize player skills
+            <string>///Initialize player skills and skill effects
 
 enum skills{
     punch,
@@ -39,10 +39,22 @@ enum skills{
     tackle
 }
 
-
+//Player has 3 skills, these can be changed and are decided with the skill array 
 skill[0] = skills.punch;
 skill[1] = skills.talk;
 skill[2] = skills.flee;
+
+//The things that will happen when a skill is used
+effect[skills.punch]    = skill_punch;
+effect[skills.kick]     = skill_kick;
+effect[skills.talk]     = skill_talk;
+effect[skills.think]    = skill_think;
+effect[skills.defend]   = skill_defend;
+effect[skills.flee]     = skill_flee;
+effect[skills.powerup]  = skill_powerup;
+effect[skills.grapple]  = skill_grapple;
+effect[skills.tackle]   = skill_tackle;
+
 </string>
           </argument>
         </arguments>
